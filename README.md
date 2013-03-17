@@ -18,7 +18,7 @@ Sider listens on 9000 and is specified an HTTP endpoint, connected to a remote R
 
 	./sider.rb -l 9000 -e "http://proxy.askcerebro.com/sider"
 
-It also speaks Redis unified protocol:
+It also speaks [Redis unified protocol](http://redis.io/topics/protocol):
 
 
 	*3
