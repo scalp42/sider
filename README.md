@@ -36,7 +36,11 @@ From there, our initial request is converted to HTTP protocol and sent to our en
 
 	URI expected (sider location omitted):
 
-	/set/tata/titi
+	/set/key/value
+	
+but technically
+	
+	/side/set/key/value
 	
 A `HTTP/1.1 200 OK` is returned with the actual response from our remote Redis instance (A first byte "+" to return Redis status):
 
