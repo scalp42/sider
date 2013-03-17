@@ -72,9 +72,9 @@ We could for example have Nginx take care of the `/sider` location and talk to u
 		red:set_timeout(500)
 		local ok, err = red:connect("127.0.0.1", 6379)
 	
-		local res, err = red:set(ngx.var.siderkey, ngx.var.siderva)
+		local res, err = red:set(ngx.var.siderkey, ngx.var.siderval)
 	
-		if res == ngx.null then
+		if not res then then
 			ngx.status = "-ERR"
 			ngx.exit(ngx.status)
 		end
